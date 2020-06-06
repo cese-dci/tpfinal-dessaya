@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
+Title "Teensy 3.2"
+Date "2020-06-05"
 Rev ""
-Comp ""
+Comp "Diego Essaya"
 Comment1 ""
 Comment2 ""
 Comment3 ""
