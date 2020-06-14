@@ -515,10 +515,6 @@ Wire Wire Line
 	1400 3250 2150 3250
 Wire Wire Line
 	2150 3650 2150 3700
-Wire Wire Line
-	2150 3700 2050 3700
-Wire Wire Line
-	2150 4000 2050 4000
 Connection ~ 1400 3250
 Wire Wire Line
 	1400 3250 1400 3400
@@ -585,7 +581,6 @@ F 3 "~" H 2150 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 3700 2150 3750
-Connection ~ 2150 4000
 Wire Wire Line
 	2150 3950 2150 4000
 $Comp
@@ -839,11 +834,7 @@ Text Notes 4000 2700 0    50   ~ 0
 near pins 3, 30, 48
 Wire Wire Line
 	8900 6200 8850 6200
-Text Label 2050 4000 2    50   ~ 0
-AGND
-Text Label 8850 6000 2    50   ~ 0
-AGND
-Text Label 2050 3700 2    50   ~ 0
+Text Label 3250 3700 2    50   ~ 0
 AREF
 Text Label 8850 5900 2    50   ~ 0
 AREF
@@ -881,8 +872,6 @@ Wire Wire Line
 	8900 5500 8850 5500
 Wire Wire Line
 	8900 5300 8850 5300
-Wire Wire Line
-	8900 6000 8850 6000
 $Comp
 L Connector_Generic:Conn_01x26 J2
 U 1 1 5F3E6741
@@ -1096,12 +1085,12 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR0105
 U 1 1 5F150E49
-P 8450 6100
-F 0 "#PWR0105" H 8450 5950 50  0001 C CNN
-F 1 "+3.3V" H 8465 6273 50  0000 C CNN
-F 2 "" H 8450 6100 50  0001 C CNN
-F 3 "" H 8450 6100 50  0001 C CNN
-	1    8450 6100
+P 8400 5950
+F 0 "#PWR0105" H 8400 5800 50  0001 C CNN
+F 1 "+3.3V" H 8415 6123 50  0000 C CNN
+F 2 "" H 8400 5950 50  0001 C CNN
+F 3 "" H 8400 5950 50  0001 C CNN
+	1    8400 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1114,8 +1103,6 @@ Wire Wire Line
 	6150 6000 8050 6000
 Wire Wire Line
 	6150 5900 8000 5900
-Wire Wire Line
-	8900 6100 8450 6100
 Wire Wire Line
 	7300 3400 7300 4550
 Wire Wire Line
@@ -1311,4 +1298,36 @@ Wire Wire Line
 	8150 6200 8150 5200
 Wire Wire Line
 	8150 5200 8900 5200
+$Comp
+L power:GNDA #PWR?
+U 1 1 5EE79EA4
+P 2650 4050
+F 0 "#PWR?" H 2650 3800 50  0001 C CNN
+F 1 "GNDA" H 2655 3877 50  0000 C CNN
+F 2 "" H 2650 4050 50  0001 C CNN
+F 3 "" H 2650 4050 50  0001 C CNN
+	1    2650 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4050 2650 4000
+$Comp
+L power:GNDA #PWR?
+U 1 1 5EE8C512
+P 8550 6200
+F 0 "#PWR?" H 8550 5950 50  0001 C CNN
+F 1 "GNDA" H 8555 6027 50  0000 C CNN
+F 2 "" H 8550 6200 50  0001 C CNN
+F 3 "" H 8550 6200 50  0001 C CNN
+	1    8550 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 6000 8550 6200
+Wire Wire Line
+	8550 6000 8900 6000
+Wire Wire Line
+	8400 6100 8400 5950
+Wire Wire Line
+	8400 6100 8900 6100
 $EndSCHEMATC
